@@ -10,7 +10,9 @@ By the end of the next two challenges you'll have a fully-functioning Sudoku sol
 
 The person who created the puzzle provides a partial solution so that some squares already have numbers. Typically, there are enough initial numbers to guarantee a unique solution.
 
-![Unsolved](http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png) &nbsp; ![Solved Sudoku](http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/250px-Sudoku-by-L2G-20050714_solution.svg.png)
+![Unsolved](http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png)
+
+![Solved Sudoku](http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/250px-Sudoku-by-L2G-20050714_solution.svg.png)
 
 For the first iteration, we're just going build a solver that fills in "logically necessary" squares and requires no guessing.
 
@@ -18,7 +20,7 @@ For the first iteration, we're just going build a solver that fills in "logicall
 
 Breathe: we know this is the hardest challenge you've hit yet. When in doubt, take a step back and reflect on how you or someone else plays Sudoku and don't get "stuck" in the code.
 
-Your goal here is to learn how to model a relatively complex real-world system &mdash; a person solving Sudoku. You'll learn the importance of well-encapsulated code and use some basic object-oriented design.
+Your goal here is to learn how to model a relatively complex real-world system—a person solving Sudoku. You'll learn the importance of well-encapsulated code and use some basic object-oriented design.
 
 ## Objectives
 
@@ -26,7 +28,7 @@ Your goal here is to learn how to model a relatively complex real-world system &
 
 Think carefully about all the nouns and verbs in a Sudoku game. There's the person who created the puzzle (the setter). There's the person who is solving the puzzle (the player). What are the important parts of the board called? How do the player and setting interact with them?
 
-A computer program that solves Sudoku is simulating the *player*, which means the better you can empathize with the player the more likely you'll understand how to write a Sudoky solver. You'll be tempted to focus on the board first &mdash; is it some kind of array, a hash, something else? &mdash; but don't! Understanding the person playing the game is key; the code to "power" the board is a detail.
+A computer program that solves Sudoku is simulating the *player*, which means the better you can empathize with the player the more likely you'll understand how to write a Sudoku solver. You'll be tempted to focus on the board first—is it some kind of array, a hash, something else?—but don't! Understanding the person playing the game is key, the code to "power" the board is a detail.
 
 ### Modeling: Strategies for Humans
 
