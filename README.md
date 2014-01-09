@@ -2,6 +2,9 @@
 
 ##Learning Competencies
 
+* Model a simple real-world procedure in Ruby.
+* Use Psuedocode to model 
+
 ##Summary
 
 By the end of the next two challenges you'll have a fully-functioning Sudoku solver that you can run from the command line.
@@ -16,21 +19,17 @@ The person who created the puzzle provides a partial solution so that some squar
 
 For the first iteration, we're just going build a solver that fills in "logically necessary" squares and requires no guessing.
 
-## Learning Goals
+##Releases
 
-Breathe: we know this is the hardest challenge you've hit yet. When in doubt, take a step back and reflect on how you or someone else plays Sudoku and don't get "stuck" in the code.
+###Release 0 : Modeling
 
-Your goal here is to learn how to model a relatively complex real-world system—a person solving Sudoku. You'll learn the importance of well-encapsulated code and use some basic object-oriented design.
-
-## Objectives
-
-### Modeling: Write down the nouns and verbs of the game
+####Modeling: Write down the nouns and verbs of the game
 
 Think carefully about all the nouns and verbs in a Sudoku game. There's the person who created the puzzle (the setter). There's the person who is solving the puzzle (the player). What are the important parts of the board called? How do the player and setting interact with them?
 
 A computer program that solves Sudoku is simulating the *player*, which means the better you can empathize with the player the more likely you'll understand how to write a Sudoku solver. You'll be tempted to focus on the board first—is it some kind of array, a hash, something else?—but don't! Understanding the person playing the game is key, the code to "power" the board is a detail.
 
-### Modeling: Strategies for Humans
+#### Modeling: Strategies for Humans
 
 Get out an actual Sudoku puzzle, printed on a piece of paper. Play it with your pair. Pay attention to yourself and to each other.
 
@@ -42,7 +41,7 @@ Get out an actual Sudoku puzzle, printed on a piece of paper. Play it with your 
 
 It's important to see that sometimes the strategies that work for us (humans) would be really hard to implement on a computer, and vice versa: strategies we avoid because we'd have to write too much, use too many sheets of paper, or remember too much are a cakewalk for a computer.
 
-### Modeling: Pseudocode for First Iteration
+#### Modeling: Pseudocode for First Iteration
 
 Remember, for the first iteration, we're just going build a solver that fills in "logically necessary" squares and requires no guessing. This might not solve every Sudoku board, although it often solves the easiest. How can you tell when you've filled in all the "logically necessary" squares?
 
@@ -54,7 +53,7 @@ For example, given a cell/square, you'll probably need at least three methods:
 2. Give me the other cells in that cell's column.
 3. Give me the other cells in that cell's box.
 
-### Ruby: Now code it!
+###Release 1 :  Code it up!
 
 Your Sudoku solver should take a string like this as its input:
 
@@ -98,7 +97,7 @@ Don't worry about the particular format of the board when printed. The key thing
 
 Do *not* worry about performance yet! Optimizations can come later. Clean, logical code is more important and will be easier to refactor.
 
-###Testing!
+###Release 2 : Testing!
 
 Remember, always start with the simplest test case possible. For a Sudoku solver, what's the simplest case? (Besides being passed an already-solved board.) Working with a board that is only missing one number.
 
@@ -106,9 +105,6 @@ Remember, always start with the simplest test case possible. For a Sudoku solver
 609238745274561398853947621486352179792614583531879264945723816328196457167485932
 ```
 
-##Releases
-###Release 0
-
-##Optimize Your Learning
+<!-- ##Optimize Your Learning -->
 
 ##Resources
