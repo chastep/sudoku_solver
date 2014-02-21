@@ -3,7 +3,7 @@
 ##Learning Competencies
 
 * Model a simple real-world procedure in Ruby.
-* Use Psuedocode to model 
+* Use Pseudocode to model 
 
 ##Summary
 
