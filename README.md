@@ -61,14 +61,28 @@ Your Sudoku solver should take a string like this as its input:
 619030040270061008000047621486302079000014580031009060005720806320106057160400030
 ```
 
-Each consecutive 9 digits represents a row of the Sudoku board, and a `0` represents an empty cell. It'd work like this:
+Each consecutive 9 digits represents a row of the Sudoku board, and a `0` represents an empty cell.
+
+After you call `solve!` you should be able to ask the game for solved board in the same format.
+
+It'd work like this:
 
 ```ruby
 game = Sudoku.new('619030040270061008000047621486302079000014580031009060005720806320106057160400030')
 
 game.solve!
 
-puts game.board
+game.board #=> '123456789123456789123456789123456789123456789123456789123456789123456789123456789'
+```
+
+You'll also need a `to_s` method to visualize it:
+
+```ruby
+game = Sudoku.new('619030040270061008000047621486302079000014580031009060005720806320106057160400030')
+
+game.solve!
+
+puts game.to_s
 ```
 
 This would print something like this:
@@ -91,20 +105,16 @@ This would print something like this:
 
 Again, **note**, this first iteration might not solve every possible Sudoku board. This means it would finish when it can no longer make a choice and "give up." We'll create the fully-featured version in the next challenge.
 
-Don't worry about the particular format of the board when printed. The key thing is getting the logic around solving/guessing correctly.
+Don't worry about the particular format of the board in your `to_s` method. The key thing is getting the logic around solving/guessing correctly.
 
 #### What about performance?
 
 Do *not* worry about performance yet! Optimizations can come later. Clean, logical code is more important and will be easier to refactor.
 
-###Release 2 : Testing!
+### Testing
 
 Remember, always start with the simplest test case possible. For a Sudoku solver, what's the simplest case? (Besides being passed an already-solved board.) Working with a board that is only missing one number.
 
 ```
 609238745274561398853947621486352179792614583531879264945723816328196457167485932
 ```
-
-<!-- ##Optimize Your Learning -->
-
-##Resources
