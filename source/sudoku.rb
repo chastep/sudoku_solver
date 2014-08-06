@@ -2,7 +2,7 @@ class Sudoku
   def initialize(board_string)
   end
 
-  def solve!
+  def solve
   end
 
   def board
