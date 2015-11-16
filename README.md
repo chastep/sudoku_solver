@@ -16,7 +16,7 @@ Generally, a puzzle provides a partial solution so that some squares already hav
 ![Unsolved](http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png) ![Solved Sudoku](http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/250px-Sudoku-by-L2G-20050714_solution.svg.png)
 
 
-In this challenge, you are presented with 15 unsolved Sudoku puzzles.  The puzzles can be found in the `source/sudoku_puzzles.txt` file.  Five puzzles can be solved with basic logic.  Five require slightly more advanced logic.  Five require educated guessing.  A complete solution will solve all 15 puzzles.
+In this challenge, you are presented with 15 unsolved Sudoku puzzles.  The puzzles can be found in the file `sudoku_puzzles.txt`.  Five puzzles can be solved with basic logic.  Five require slightly more advanced logic.  Five require educated guessing.  A complete solution will solve all 15 puzzles.
 
 
 ## Releases
@@ -53,7 +53,7 @@ Before you begin coding, develop and write a pseudocode solution.
 The first five puzzles can be solved with basic logic: identifying when a square has only one possible value.
 
 #### Details
-- You will write a `Sudoku` class, the beginnings of which can be found in the `source/sudoku.rb` file.  Your solver will be an instance of this class; see the driver code provided in the `source/runner.rb` file.
+- You will write a `Sudoku` class, the beginnings of which can be found in the file `sudoku.rb`.  Your solver will be an instance of this class; see the driver code provided in the file `runner.rb`.
 
 
 - A solver is instantiated with a `String` representing an unsolved Sudoku board as its argument.  Unsolved squares are marked with a `"-"`.  Solved squares have a character from `"1"` to `"9"`.
