@@ -1,22 +1,14 @@
 # Sudoku
 
-## Learning Competencies
-
-* Model a simple real-world system in Ruby code
-* Use Pseudocode effectively to model problem-solving
-
 ## Summary
-
-By the end of this challenge you'll have a fully-functioning Sudoku solver that you can run from the command line.
+![solving sequence animation](readme-assets/sequence.gif)  
+*Figure 1*.  Animation solving a sudoku puzzle and partially verifying the solution.
 
 [Sudoku](http://en.wikipedia.org/wiki/Sudoku) is a logic-based, combinatorial number-placement puzzle. The objective is to fill a 9×9 grid with digits so that each column, each row, and each of the nine 3×3 sub-grids that compose the grid (also called "boxes") contains the digits from 1 to 9.
 
-Generally, a puzzle provides a partial solution so that some squares already have numbers.  To solve the puzzle, you fill in the unsolved squares.
+Generally, a puzzle provides a partial solution so that some squares already have numbers.  To solve the puzzle, we need to fill in the unsolved squares, as demonstrated in Figure 1.
 
-![Unsolved](http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png) ![Solved Sudoku](http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/250px-Sudoku-by-L2G-20050714_solution.svg.png)
-
-
-In this challenge, you are presented with 15 unsolved Sudoku puzzles.  The puzzles can be found in the file `sudoku_puzzles.txt`.  Five puzzles can be solved with basic logic.  Five require slightly more advanced logic.  Five require educated guessing.  A complete solution will solve all 15 puzzles.
+By the end of this challenge we'll have a fully functioning Sudoku solver that runs from the command line.  We'll be presented with 15 unsolved Sudoku puzzles.  The puzzles can be found in the file `sudoku_puzzles.txt`.  Five puzzles can be solved with basic logic.  Five require slightly more advanced logic.  Five require educated guessing.  A complete solution to this challenge will solve all 15 puzzles.
 
 
 ## Releases
