@@ -78,3 +78,7 @@ Puzzles 6 - 10 can be solved using logic alone but require more than just identi
 
 ### Release 2:  Educated Guessing
 Puzzles 11 - 15 can be solved by making informed guesses about the values of unsolved squares and then trying to solve the puzzles based on those guessed values.  Guessing should be started once our `Sudoku#solve` method gets stuck.  In other words, solve as many squares as possible using logic and then start guessing.
+
+
+## Conclusion
+Writing a Sudoku solver presents a lot of problems:  identifying the logic involved in the game itself, translating that logic to code, manipulating data structures, etc.  It provides a nice comprehensive challenge, summing the skills that we've developed to this point at Dev Bootcamp.
