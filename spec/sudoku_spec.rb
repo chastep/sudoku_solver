@@ -1,4 +1,4 @@
 require_relative '../sudoku'
 
-describe Sudoku do
+describe "Sudoku" do
 end
