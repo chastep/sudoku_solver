@@ -10,8 +10,8 @@ Generally, a puzzle provides a partial solution so that some squares already hav
 
 By the end of this challenge we'll have a fully functioning Sudoku solver that runs from the command line.  We'll be presented with 15 unsolved Sudoku puzzles.  The puzzles can be found in the file `sudoku_puzzles.txt`.
 
- * Five puzzles can be solved with **basic logic.**
- * Five require slightly more **advanced logic.  **
+ * Five puzzles can be solved with **basic logic**.
+ * Five require slightly more **advanced logic**.
  * Five require **educated guessing**.
  
 A complete solution to this challenge will solve all 15 puzzles.
