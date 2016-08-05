@@ -23,7 +23,7 @@ Failing to follow the following restrictions will result in an invalid submissio
  - Do not create classes, you will only be creating (many) methods.
  - No instance variables and no globals, you will only use local variables.
 
-To accomplish this, you will be writing methods that accept arguments as inputs and return useful values represnting their work. You should be writing many methods, and using them together to build up your solver.
+To accomplish this, you will be writing methods that accept arguments as inputs and return useful values representing their work. You should be writing many methods, and using them together to build up your solver.
 
 ## Testing
 Good news: you will be creating many small methods, and small methods are easier to test.
