@@ -4,6 +4,8 @@
 # your solver has tried to solve it.
 # How you represent your board is up to you!
 def solve(board_string)
+	puts board_string
+	puts string_to_hash(board_string)
 end
 
 # Returns a boolean indicating whether
@@ -19,4 +21,31 @@ end
 # The input board will be in whatever
 # form `solve` returns.
 def pretty_board(board)
+
 end
+
+# game plan
+# ---------
+# 
+
+def check_rows(board_string)
+	# one_thru_nine = *(1..9)
+	board_array = board_str_to_array(board_string)[0..-2]
+	puts board_array
+end
+
+def string_to_hash(board_string)
+	game = {}
+	board_string.length.times do |i|
+		game[i] = {}
+		if board_string[i] == "-"
+			game[i][:value] = 0
+			game[i][:fixed] = false
+		else
+			game[i][:value] = board_string[i].to_i
+			game[i][:fixed] = true
+		end
+	end
+	game
+end
+
