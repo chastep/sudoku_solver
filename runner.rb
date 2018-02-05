@@ -12,30 +12,30 @@ require_relative 'sudoku'
 # Remember, the file has newline characters at the end of each line,
 # so we call String#chomp to remove them.
 
-# def get_puzzle_number
-# 	puts "What puzzle(s) would you like to solve today?"
-# 	puts "---------------------------------------------"
-# 	puts "Please enter a number from 1-15"
-# 	input = gets.chomp
-# 	try_again_check(input)
-# end
+def get_puzzle_number
+	puts "What puzzle(s) would you like to solve today?"
+	puts "---------------------------------------------"
+	puts "Please enter a number from 1-15"
+	input = gets.chomp
+	try_again_check(input)
+end
 
-# def try_again_check(input)
-# 	if (1..15).include?(input.to_i)
-# 		puts "Good to go"
-# 		return input.to_i
-# 	else
-# 		puts "Please try again... (1-15)"
-# 		redo_puzzle_choice = gets.chomp
-# 		try_again_check(redo_puzzle_choice)
-# 	end
-# end
+def try_again_check(input)
+	if (1..15).include?(input.to_i)
+		puts "Good to go"
+		return input.to_i
+	else
+		puts "Please try again... (1-15)"
+		redo_puzzle_choice = gets.chomp
+		try_again_check(redo_puzzle_choice)
+	end
+end
 
-# puzzle_choice = get_puzzle_number - 1
+puzzle_choice = get_puzzle_number - 1
 
-# board_string = File.readlines('sudoku_puzzles.txt')[puzzle_choice]
+board_string = File.readlines('sudoku_puzzles.txt')[puzzle_choice].chomp
 
-board_string = File.readlines('sudoku_puzzles.txt')[0]
+# board_string = File.readlines('sudoku_puzzles.txt')[0]
 
 solved_board = solve(board_string)
 if solved?(solved_board)
